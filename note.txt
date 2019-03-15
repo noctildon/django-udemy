@@ -1,0 +1,19 @@
+建立django專案 : $ django-admin startproject [專案名稱]
+    經常會把第1層的專案名稱後面加-project,以區別在其之下與之同名的資料夾
+啟動server : $ python3 manage.py runserver
+db.sqlite3 : django的資料庫
+
+
+views.py -> 回傳http response給user
+urls.py -> 處理url和回傳的函式,由views.py匯入
+templates/ -> html模版 然後在settings.py的TEMPLATES的'DIRS'加入'templates'
+
+在html模版中,用{{變數}}的方式去存取資料
+
+for 回圈寫法
+{% for i in something%}
+do anything with i
+{% endfor %}
+
+
+產生django app: $ python3 manage.py startapp jobs
